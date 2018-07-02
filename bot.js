@@ -204,10 +204,7 @@ channel.send({embed : embed});
 
 
 
-client.on('ready', () => {
-client.user.setActivity('تحب شخص،ويحبك شَخص، والنصيب شخص آخر!..’(', { type: 'LISTENING' })
 
-});
 
 
 // THIS  MUST  BE  THIS  WAY
