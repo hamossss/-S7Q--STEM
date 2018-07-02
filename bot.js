@@ -159,5 +159,88 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(20000)})
     }
 })
 
+
+client.on('message', message => {
+if (message.content.startsWith("!ban")) {
+    var mention = message.mentions.members.first();
+    if(!mention) return message.channel.send("يجب منشن العضو");
+
+    mention.ban("By: " + message.author.tag);
+    
+    message.channel.send("تم أعطاء باند الى : " + mention.tag);
+};
+});
+
+
+client.on('message', message => {
+if (message.content.startsWith("!kick")) {
+    var mention = message.mentions.members.first();
+    if(!mention) return message.channel.send("يجب منشن العضو");
+
+    mention.kick("By: " + message.author.tag);
+    
+    message.channel.send("تم أعطاء كيك الى : " + mention.tag);
+};
+});
+
+
+
+
+client.on('guildMemberRemove', member => {
+    var embed = new Discord.RichEmbed()
+    .setAuthor(member.user.username, member.user.avatarURL)
+    .setThumbnail(member.user.avatarURL)
+    .setTitle(`خرج عضو`)
+    .setDescription(`**تم تبنيدو من قبل الاداره او خراج**`)
+    .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
+    .setColor('RED')
+    .setFooter(` Bot`, '')
+
+var channel =member.guild.channels.find('name', 'chat')
+if (!channel) return;
+channel.send({embed : embed});
+});
+
+
+
+
+client.on('message', message => {
+	 var prefix = "$";
+  if (message.content.startsWith(prefix + "id")) {
+  if(!message.channel.guild) return message.reply(`هذا الأمر فقط ل السيرفرات :x:`);
+   message.guild.fetchInvites().then(invs => {
+      let member = client.guilds.get(message.guild.id).members.get(message.author.id);
+      let personalInvites = invs.filter(i => i.inviter.id === message.author.id);
+      let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
+      var moment = require('moment');
+      var args = message.content.split(" ").slice(1);
+let user = message.mentions.users.first();
+var men = message.mentions.users.first();
+ var heg;
+ if(men) {
+     heg = men
+ } else {
+     heg = message.author
+ }
+var mentionned = message.mentions.members.first();
+  var h;
+ if(mentionned) {
+     h = mentionned
+ } else {
+     h = message.member
+ }
+moment.locale('ar-TN');
+      var id = new  Discord.RichEmbed()
+    .setColor("#0a0909")
+    .setAuthor(message.author.username, message.author.avatarURL)
+.addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true)
+.addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)
+.addField(': عدد الدعوات', inviteCount,false)
+.setFooter("-")
+    message.channel.sendEmbed(id);
+})
+}
+     });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
