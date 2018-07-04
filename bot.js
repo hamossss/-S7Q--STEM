@@ -96,7 +96,7 @@ client.on("message", msg => {
 });
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('تكلم')) {
+  if (eyad.content.startsWith('!تكلم')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
  let men = eyad.mentions.users.first()
  let mas = eyad.author
@@ -129,7 +129,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(20000)})
 
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('اسكت')) {
+  if (eyad.content.startsWith('!اسكت')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 let men = eyad.mentions.users.first()
 let mas = eyad.author
@@ -178,20 +178,14 @@ channel.send({embed : embed});
 
 
 
-
-
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(```قوانين الكلان ``
-
-1 - **احترام الاداره والاعضاء**
-2 - **عدم السب في روم الصوتي او روم كتابي**
-3 - **يمنع منعا باتا نشر الروابط في السيرفر او في الخاص**
-4 - **رتبتك تزيد حسب تفاعلك بالدسكورد واللعبه**
+  return channel.send(`:rose:  ولكم نورت السيرفر:rose: 
 :crown:اسم العضو  ${member}:crown:  
 انت العضو رقم ${member.guild.memberCount} `) 
 }).catch(console.error)
 })
+
 
 
 // THIS  MUST  BE  THIS  WAY
