@@ -180,7 +180,7 @@ channel.send({embed : embed});
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`「.🔱 Welcome TO KD 🔱.」شيڪ عڵي قوٱنين ٱڵڪڵٱن #rules 
+  return channel.send(`「.🔱 Welcome TO CLAN S7Q 🔱.」شيڪ عڵي قوٱنين ٱڵڪڵٱن #rules 
 :crown:اسم العضو  ${member}:crown:  
 انت العضو رقم ${member.guild.memberCount} `) 
 }).catch(console.error)
