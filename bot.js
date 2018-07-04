@@ -169,7 +169,7 @@ client.on('guildMemberRemove', member => {
     .setDescription(`**اقفل الباب وراك**`)
     .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('RED')
-    .setFooter(` Bot`, '')
+    .setFooter(`S7Q Bot`, '')
 
 var channel =member.guild.channels.find('name', 'chat')
 if (!channel) return;
