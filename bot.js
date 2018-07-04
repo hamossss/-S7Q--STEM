@@ -180,7 +180,13 @@ channel.send({embed : embed});
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`:rose:  ولكم نورت السيرفر:rose: 
+  return channel.send(```قوانين الكلان ``
+
+1 - **احترام الاداره والاعضاء**
+2 - **عدم السب في روم الصوتي او روم كتابي**
+3 - **يمنع منعا باتا نشر الروابط في السيرفر او في الخاص**
+4 - **رتبتك تزيد حسب تفاعلك بالدسكورد واللعبه**
+
 :crown:اسم العضو  ${member}:crown:  
 انت العضو رقم ${member.guild.memberCount} `) 
 }).catch(console.error)
