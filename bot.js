@@ -332,6 +332,27 @@ client.on('message', Codes => {
 });
 
 
+client.on('message', msg => { 
+if (msg.content.startsWith(`!report`)) {
+
+   let args = msg.content.split(" ").slice(1);
+
+  if (!msg.mentions.members.first()) return msg.reply(`منشن شخص`)
+
+  if (!args[1]) return msg.reply(`ما هو البلاغ ؟؟`)
+
+  if (msg.guild.channels.find('name', 'warnings')) {
+
+    msg.guild.channels.find('name', 'warnings').send(`
+  تبليغ على : ${msg.mentions.members.first()}
+  بلغ عليه من قبل : ${msg.member}
+  السبب : **${args.join(" ").split(msg.mentions.members.first()).slice(' ')}**
+  `)
+  }
+}
+})
+
+
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
