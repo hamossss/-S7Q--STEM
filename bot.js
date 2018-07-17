@@ -327,7 +327,7 @@ guild.channels.find('id', '466572919041032193').setName(" Voice Online「"+rebel
 client.on('message', Codes => {
   
   if(Codes.content === "!صوت") {
-      Codes.channel.send(" Voice Online「"+rebel+"」");
+      Codes.channel.send(" الاعضاء في الرومات「"+rebel+"」");
 }
 });
 
