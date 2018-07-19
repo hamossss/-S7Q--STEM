@@ -307,7 +307,7 @@ if(!check.voiceChannelID){
   rebel++;
 }
 }
-guild.channels.find('id', '466572919041032193').setName(" 「"+rebel+"」الاعضاء في الرومات");
+guild.channels.find('id', '469583620823187466').setName(" 「"+rebel+"」الاعضاء في الرومات");
   client.setInterval(() =>{
     let d = Date.now()
   }, 5000);
@@ -318,10 +318,10 @@ let newUserChannel = newMember.voiceChannel
 let oldUserChannel = oldMember.voiceChannel
  if(oldUserChannel === undefined && newUserChannel !== undefined) {
    rebel++;
-guild.channels.find('id', '466572919041032193').setName("「"+rebel+"」الاعضاء في الرومات");
+guild.channels.find('id', '469583620823187466').setName("「"+rebel+"」الاعضاء في الرومات");
 } else if(newUserChannel === undefined){
   rebel--;
-guild.channels.find('id', '466572919041032193').setName("「"+rebel+"」الاعضاء في الرومات");
+guild.channels.find('id', '469583620823187466').setName("「"+rebel+"」الاعضاء في الرومات");
 }
 });
 client.on('message', Codes => {
