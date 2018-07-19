@@ -353,6 +353,14 @@ if (msg.content.startsWith(`!report`)) {
 })
 
 
+
+client.on ("guildMemberAdd", member => {
+
+   var role = member.guild.roles.find ("name", "- S7Q | VISTORY");
+   member.addRole (role);
+
+});
+
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
