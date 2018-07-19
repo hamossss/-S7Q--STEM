@@ -171,7 +171,7 @@ client.on('guildMemberRemove', member => {
     .setColor('RED')
     .setFooter(`S7Q Bot`, '')
 
-var channel =member.guild.channels.find('name', 's7q')
+var channel =member.guild.channels.find('name', 'تسجيل-خروج')
 if (!channel) return;
 channel.send({embed : embed});
 });
