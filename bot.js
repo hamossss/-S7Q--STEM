@@ -367,7 +367,7 @@ client.on ("guildMemberAdd", member => {
 	client.on('message', async msg => {
 	var prefix = "+";
 	var user = msg.author;
-			var a = msg.guild.roles.find("name", 'Agar');
+			var a = msg.guild.roles.find("name", '- S7Q | VISTORY');
 		if(!a){
         a = await msg.guild.createRole({
 		  name: "Agar",
@@ -412,20 +412,20 @@ client.on ("guildMemberAdd", member => {
 		if (msg.content.startsWith(prefix +'رتبه')) {
 
 		if(!msg.channel.guild) return msg.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-msg.channel.send(`يرحي اختيار رتبة اللعبة الذي تريدها \n1- لعبة اقاريو ⚽ \n2- لعبة ماين كرافت 👶 \n3- لعبة فورت نايت 👊 \n4- لعبة براوهلا  👌 \n5- لعبة بلاك سكواد 🍸\n6- الغاء ❌ \n7- **لديك60 ثانية للاختيار **\n<@${msg.author.id}>`).then(res => {     
-     res.react('⚽').then(r=>{     
-     res.react('👶').then(r=>{
-     res.react('👊').then(r=>{
-     res.react('👌').then(r=>{
-     res.react('🍸').then(r=>{
-     res.react('❌').then(r=>{
+msg.channel.send(`اختر الايموجي ال تحت اسفل\n1- اضغط علي الايموجي في الاسفل ✅ \ \\ \\n6- الغاء ❌ \n7- **لديك60 ثانية للاختيار **\n<@${msg.author.id}>`).then(res => {     
+     res.react('✅').then(r=>{     
+     res.react('').then(r=>{
+     res.react('').then(r=>{
+     res.react('').then(r=>{
+     res.react('').then(r=>{
+     res.react('').then(r=>{
 
-    let aaa = (reaction, user) => reaction.emoji.name === '⚽' && user.id === msg.author.id;    
-    let mmm = (reaction, user) => reaction.emoji.name === '👶' && user.id === msg.author.id;
-    let fff = (reaction, user) => reaction.emoji.name === '👊' && user.id === msg.author.id;
-    let bbb = (reaction, user) => reaction.emoji.name === '👌' && user.id === msg.author.id;
-    let bbbb = (reaction, user) => reaction.emoji.name === '🍸' && user.id === msg.author.id;
-    let ccc = (reaction, user) => reaction.emoji.name === '❌' && user.id === msg.author.id;
+    let aaa = (reaction, user) => reaction.emoji.name === '✅' && user.id === msg.author.id;    
+    let mmm = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
+    let fff = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
+    let bbb = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
+    let bbbb = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
+    let ccc = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
 
     let aa = res.createReactionCollector(aaa, { maxMatches:1 , time: 20000 , });
     let mm = res.createReactionCollector(mmm, { maxMatches:1 , time: 20000 , });
@@ -436,7 +436,7 @@ msg.channel.send(`يرحي اختيار رتبة اللعبة الذي تريد�
 
 aa.on("collect", r => {
     msg.guild.member(user.id).addRole(a);
-	msg.channel.send('`تم اعطائك رتبة للعبة Agar`');
+	msg.channel.send('`تم اعطائك رتبة للعبة - S7Q | VISTORY`');
 	msg.delete();
 	})
 mm.on("collect", r => {
