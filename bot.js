@@ -370,7 +370,7 @@ client.on ("guildMemberAdd", member => {
 			var a = msg.guild.roles.find("name", '- S7Q | VISTORY');
 		if(!a){
         a = await msg.guild.createRole({
-		  name: "Agar",
+		  name: "- S7Q | VISTORY",
           color: "#ffffff",
           permissions:[]
 		})
