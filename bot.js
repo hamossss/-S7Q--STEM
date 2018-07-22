@@ -166,12 +166,12 @@ client.on('guildMemberRemove', member => {
     .setAuthor(member.user.username, member.user.avatarURL)
     .setThumbnail(member.user.avatarURL)
     .setTitle(`خرج عضو`)
-    .setDescription(`**__طلع آو تم طرده من قبل الآدارة__ :clap:**`)
+    .setDescription(`**__اقفل الباب وراك يا عسل__ :clap:**`)
     .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('RED')
     .setFooter(`S7Q Bot`, '')
 
-var channel =member.guild.channels.find('name', 'تسجيل-خروج')
+var channel =member.guild.channels.find('name', 'ترحيب')
 if (!channel) return;
 channel.send({embed : embed});
 });
