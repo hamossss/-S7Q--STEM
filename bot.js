@@ -415,18 +415,18 @@ client.on ("guildMemberAdd", member => {
 msg.channel.send(`اضغط علي الايموجي في الاسفل  \n1- اضغط علي الايموجي في الاسفل ✅
  \n2- الغاء ❌ \n3- **لديك60 ثانية للاختيار **\n<@${msg.author.id}>`).then(res => {     
      res.react('✅').then(r=>{     
-     res.react('').then(r=>{
-     res.react('').then(r=>{
-     res.react('').then(r=>{
-     res.react('').then(r=>{
-     res.react('').then(r=>{
+     res.react('👶').then(r=>{
+     res.react('👊').then(r=>{
+     res.react('👌').then(r=>{
+     res.react('🍸').then(r=>{
+     res.react('❌').then(r=>{
 
     let aaa = (reaction, user) => reaction.emoji.name === '✅' && user.id === msg.author.id;    
-    let mmm = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
-    let fff = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
-    let bbb = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
-    let bbbb = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
-    let ccc = (reaction, user) => reaction.emoji.name === '' && user.id === msg.author.id;
+    let mmm = (reaction, user) => reaction.emoji.name === '👶' && user.id === msg.author.id;
+    let fff = (reaction, user) => reaction.emoji.name === '👊' && user.id === msg.author.id;
+    let bbb = (reaction, user) => reaction.emoji.name === '👌' && user.id === msg.author.id;
+    let bbbb = (reaction, user) => reaction.emoji.name === '🍸' && user.id === msg.author.id;
+    let ccc = (reaction, user) => reaction.emoji.name === '❌' && user.id === msg.author.id;
 
     let aa = res.createReactionCollector(aaa, { maxMatches:1 , time: 20000 , });
     let mm = res.createReactionCollector(mmm, { maxMatches:1 , time: 20000 , });
