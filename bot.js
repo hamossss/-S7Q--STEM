@@ -437,32 +437,10 @@ msg.channel.send(`اضغط علي الايموجي في الاسفل  \n1- اض�
 
 aa.on("collect", r => {
     msg.guild.member(user.id).addRole(a);
-	msg.channel.send('`تم اعطائك رتبة للعبة - S7Q | VISTORY`');
+	msg.channel.send('`تم اعطائك رتبة فيستور - S7Q | VISTORY`');
 	msg.delete();
 	})
-mm.on("collect", r => {
-    msg.guild.member(user.id).addRole(m);
-	msg.channel.send('`تم اعطائك رتبة للعبة Mincraft `');
-	msg.delete();
-})
-ff.on("collect", r => {
-    msg.guild.member(user.id).addRole(f);
-	msg.channel.send('`تم اعطائك رتبة للعبة Fortnite `');
-	msg.delete();
-})
-bb.on("collect", r => {
-    msg.guild.member(user.id).addRole(b);
-	msg.channel.send('`تم اعطائك رتبة للعبة Brawlhalla `');
-	msg.delete();
-})
-bl.on("collect", r => {
-    msg.guild.member(user.id).addRole(black);
-	msg.channel.send('`تم اعطائك رتبة للعبة Blacksquad `');
-	msg.delete();
-})
-cc.on("collect", r => {
-	msg.delete();
-})
+
 	 })
 	 })
 	 })
