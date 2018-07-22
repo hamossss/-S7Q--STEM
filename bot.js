@@ -361,6 +361,52 @@ client.on ("guildMemberAdd", member => {
 
 });
 
+
+var Eris = require("eris");
+let  ID = "442919008715669505";
+BT.on("ready", ready => {
+setInterval(function(){
+
+            let currentTime = new Date(),
+            hours = currentTime.getHours() + 2 ,
+            minutes = currentTime.getMinutes(),
+            seconds = currentTime.getSeconds(),
+            years = currentTime.getFullYear(),
+            month = currentTime.getMonth() + 1,
+            day = currentTime.getDate(),
+            week = currentTime.getDay();
+
+
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            var suffix = "AM";
+            if (hours >= 12) {
+                suffix = "PM";
+                hours = hours - 12;
+            }
+            if (hours == 0) {
+                hours = 12;
+            }
+BT.editChannel("470580233347792908", {name : "W"})
+BT.editChannel("470580233347792908", {name : "We"})
+BT.editChannel("470580233347792908", {name : "Wel"})
+BT.editChannel("470580233347792908", {name : "Welc"})
+BT.editChannel("470580233347792908", {name : "Welco"})
+BT.editChannel("470580233347792908", {name : "Welcom"})
+BT.editChannel("470580233347792908", {name : "Welcome "})
+BT.editChannel("470580233347792908", {name : "Welcome T "})
+BT.editChannel("470580233347792908", {name : "Welcome To"})
+BT.editChannel("470580233347792908", {name : "Welcome To S"})
+BT.editChannel("470580233347792908", {name : "Welcome To S7"})
+BT.editChannel("470580233347792908", {name : "Welcome To S7Q "})
+
+}, 3000);
+
+});
+
+
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
