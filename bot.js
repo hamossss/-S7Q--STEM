@@ -96,7 +96,7 @@ client.on("message", msg => {
 });
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('!تكلم')) {
+  if (eyad.content.startsWith('تكلم')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
  let men = eyad.mentions.users.first()
  let mas = eyad.author
@@ -129,7 +129,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(20000)})
 
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('!اسكت')) {
+  if (eyad.content.startsWith('اسكت')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 let men = eyad.mentions.users.first()
 let mas = eyad.author
@@ -295,7 +295,7 @@ client.on('message', message => {
 
 let rebel;
 client.on("ready", async  => {
-    let guild = client.guilds.get("442919008715669505");
+    let guild = client.guilds.get("470653659114635275");
   let users = guild.members.map(member => member.user.id);
   let i;
   rebel=0;
@@ -307,21 +307,21 @@ if(!check.voiceChannelID){
   rebel++;
 }
 }
-guild.channels.find('id', '469583620823187466').setName(" 「"+rebel+"」عدد الاعضاء في الرومات");
+guild.channels.find('id', '470893893219647489').setName(" . "+rebel+"عدد الاعضاء في الرومات");
   client.setInterval(() =>{
     let d = Date.now()
   }, 5000);
 });
 client.on('voiceStateUpdate', (oldMember, newMember) => {
-    let guild = client.guilds.get("442919008715669505");
+    let guild = client.guilds.get("470653659114635275");
 let newUserChannel = newMember.voiceChannel
 let oldUserChannel = oldMember.voiceChannel
  if(oldUserChannel === undefined && newUserChannel !== undefined) {
    rebel++;
-guild.channels.find('id', '469583620823187466').setName("「"+rebel+"」عدد الاعضاء في الرومات");
+guild.channels.find('id', '470893893219647489').setName("「"+rebel+"」عدد الاعضاء في الرومات");
 } else if(newUserChannel === undefined){
   rebel--;
-guild.channels.find('id', '469583620823187466').setName("「"+rebel+"」عدد الاعضاء في الرومات");
+guild.channels.find('id', '470893893219647489').setName("「"+rebel+"」عدد الاعضاء في الرومات");
 }
 });
 client.on('message', Codes => {
@@ -358,93 +358,12 @@ if (msg.content.startsWith(`!report`)) {
 
 
 
-	client.on('message', async msg => {
-	var prefix = "+";
-	var user = msg.author;
-			var a = msg.guild.roles.find("name", '- S7Q | VISTORY');
-		if(!a){
-        a = await msg.guild.createRole({
-		  name: "- S7Q | VISTORY",
-          color: "#ffffff",
-          permissions:[]
-		})
-		
-        }
-	    var m = msg.guild.roles.find("name", 'Minecraft');
-	if(!m){
-        m =  await msg.guild.createRole({
-		  name: "Minecraft",
-          color: "#ffffff",
-          permissions:[]
-		})
-        }
-        var f = msg.guild.roles.find("name", 'Fortnite');
-		if(!f){
-        f =  await msg.guild.createRole({
-		  name: "Fortnite",
-          color: "#ffffff",
-          permissions:[]
-		})
-        }
-        var b = msg.guild.roles.find("name", 'Brawlhalla');
-		if(!b){
-        b =  await msg.guild.createRole({
-		  name: "Brawlhalla",
-          color: "#ffffff",
-          permissions:[]
-		})
-        }
-        var black = msg.guild.roles.find("name", 'Blacksquad');
-	if(!black){
-        black =  await msg.guild.createRole({
-		  name: "Blacksquad",
-          color: "#ffffff",
-          permissions:[]
-		})
-        }
+client.on ("guildMemberAdd", member => {
 
-		if (msg.content.startsWith(prefix +'رتبه')) {
+   var role = member.guild.roles.find ("name", "- S7Q | VISTORY");
+   member.addRole (role);
 
-		if(!msg.channel.guild) return msg.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-msg.channel.send(`اضغط علي الايموجي في الاسفل  \n1- اضغط علي الايموجي في الاسفل ✅
- \n2- الغاء ❌ \n3- **لديك60 ثانية للاختيار **\n<@${msg.author.id}>`).then(res => {     
-     res.react('✅').then(r=>{     
-     res.react('👶').then(r=>{
-     res.react('👊').then(r=>{
-     res.react('👌').then(r=>{
-     res.react('🍸').then(r=>{
-     res.react('❌').then(r=>{
-
-    let aaa = (reaction, user) => reaction.emoji.name === '✅' && user.id === msg.author.id;    
-    let mmm = (reaction, user) => reaction.emoji.name === '👶' && user.id === msg.author.id;
-    let fff = (reaction, user) => reaction.emoji.name === '👊' && user.id === msg.author.id;
-    let bbb = (reaction, user) => reaction.emoji.name === '👌' && user.id === msg.author.id;
-    let bbbb = (reaction, user) => reaction.emoji.name === '🍸' && user.id === msg.author.id;
-    let ccc = (reaction, user) => reaction.emoji.name === '❌' && user.id === msg.author.id;
-
-    let aa = res.createReactionCollector(aaa, { maxMatches:1 , time: 20000 , });
-    let mm = res.createReactionCollector(mmm, { maxMatches:1 , time: 20000 , });
-    let ff = res.createReactionCollector(fff, { maxMatches:1 , time: 20000 , });
-    let bb = res.createReactionCollector(bbb, { maxMatches:1 , time: 20000 , });
-    let bl = res.createReactionCollector(bbbb,{ maxMatches:1 , time: 20000 , });
-    let cc = res.createReactionCollector(ccc, { maxMatches:1 , time: 20000 , });
-
-aa.on("collect", r => {
-    msg.guild.member(user.id).addRole(a);
-	msg.channel.send('`تم اعطائك رتبة فيستور - S7Q | VISTORY`');
-	msg.delete();
-	})
-
-	 })
-	 })
-	 })
-	 })
-	 })
-	 })
-	 })
-	 }
-	 });
-
+});
 
 
 
