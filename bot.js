@@ -307,7 +307,7 @@ if(!check.voiceChannelID){
   rebel++;
 }
 }
-guild.channels.find('id', '470893893219647489').setName(" . "+rebel+"عدد الاعضاء في الرومات");
+guild.channels.find('id', '470893893219647489').setName(" . "+rebel+" عدد الاعضاء في الرومات");
   client.setInterval(() =>{
     let d = Date.now()
   }, 5000);
@@ -318,16 +318,16 @@ let newUserChannel = newMember.voiceChannel
 let oldUserChannel = oldMember.voiceChannel
  if(oldUserChannel === undefined && newUserChannel !== undefined) {
    rebel++;
-guild.channels.find('id', '470893893219647489').setName("「"+rebel+"」عدد الاعضاء في الرومات");
+guild.channels.find('id', '470893893219647489').setName(" . "+rebel+" عدد الاعضاء في الرومات");
 } else if(newUserChannel === undefined){
   rebel--;
-guild.channels.find('id', '470893893219647489').setName("「"+rebel+"」عدد الاعضاء في الرومات");
+guild.channels.find('id', '470893893219647489').setName(" . "+rebel+" عدد الاعضاء في الرومات");
 }
 });
 client.on('message', Codes => {
   
   if(Codes.content === "!صوت") {
-      Codes.channel.send(" 「"+rebel+"」عدد الاعضاء في الرومات");
+      Codes.channel.send("  . "+rebel+" عدد الاعضاء في الرومات");
 }
 });
 
