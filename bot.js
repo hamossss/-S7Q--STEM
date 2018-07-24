@@ -341,7 +341,7 @@ client.on ("guildMemberAdd", member => {
   client.on('voiceStateUpdate', (codes, ReBeL) => {
 if(ReBeL.voiceChannelID !== "466349952356843531") return console.log("أيرور . ");
 ReBeL.guild.createChannel(ReBeL.user.username , 'voice').then((rebeeel) =>{
-    rebeeel.setParent("ايدي الكاتاجوري اللي يكون فيها الرومات المؤقته");
+    rebeeel.setParent("466349893850628108");
 ReBeL.guild.members.get(ReBeL.id).setVoiceChannel(rebeeel.id).then((codess) =>{
   console.log("تــــــم .");
   let scan = setInterval(()=>{
