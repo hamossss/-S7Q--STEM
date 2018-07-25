@@ -68,7 +68,7 @@ client.on("message", msg => {
 });
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('تكلم')) {
+  if (eyad.content.startsWith('!تكلم')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
  let men = eyad.mentions.users.first()
  let mas = eyad.author
@@ -101,7 +101,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(20000)})
 
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('اسكت')) {
+  if (eyad.content.startsWith('!اسكت')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 let men = eyad.mentions.users.first()
 let mas = eyad.author
@@ -267,7 +267,7 @@ client.on('message', message => {
 
 let rebel;
 client.on("ready", async  => {
-    let guild = client.guilds.get("470653659114635275");
+    let guild = client.guilds.get("442919008715669505");
   let users = guild.members.map(member => member.user.id);
   let i;
   rebel=0;
@@ -279,21 +279,21 @@ if(!check.voiceChannelID){
   rebel++;
 }
 }
-guild.channels.find('id', '470893893219647489').setName(" . "+rebel+" عدد الاعضاء في الرومات");
+guild.channels.find('id', '471742581244428288').setName(" . "+rebel+" عدد الاعضاء في الرومات");
   client.setInterval(() =>{
     let d = Date.now()
   }, 5000);
 });
 client.on('voiceStateUpdate', (oldMember, newMember) => {
-    let guild = client.guilds.get("470653659114635275");
+    let guild = client.guilds.get("442919008715669505");
 let newUserChannel = newMember.voiceChannel
 let oldUserChannel = oldMember.voiceChannel
  if(oldUserChannel === undefined && newUserChannel !== undefined) {
    rebel++;
-guild.channels.find('id', '470893893219647489').setName(" . "+rebel+" عدد الاعضاء في الرومات");
+guild.channels.find('id', '471742581244428288').setName(" . "+rebel+" عدد الاعضاء في الرومات");
 } else if(newUserChannel === undefined){
   rebel--;
-guild.channels.find('id', '470893893219647489').setName(" . "+rebel+" عدد الاعضاء في الرومات");
+guild.channels.find('id', '471742581244428288').setName(" . "+rebel+" عدد الاعضاء في الرومات");
 }
 });
 client.on('message', Codes => {
