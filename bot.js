@@ -354,6 +354,24 @@ if(!ReBeL.voiceChannel) {
 });
   
 
+client.on("ready", async  => {
+setInterval(function(){
+client.channels.find('id', '472078877146218506').setName("W");
+client.channels.find('id', '472078877146218506').setName("We");
+client.channels.find('id', '472078877146218506').setName("Wel");
+client.channels.find('id', '472078877146218506').setName("Welc");
+client.channels.find('id', '472078877146218506').setName("Welco");
+client.channels.find('id', '472078877146218506').setName("Welcom");
+client.channels.find('id', '472078877146218506').setName("Welcome");
+client.channels.find('id', '472078877146218506').setName("Welcome T");
+client.channels.find('id', '472078877146218506').setName("Welcome To");
+client.channels.find('id', '472078877146218506').setName("Welcome To S");
+client.channels.find('id', '472078877146218506').setName("Welcome To S7");
+client.channels.find('id', '472078877146218506').setName("Welcome To S7Q");
+client.channels.find('id', '472078877146218506').setName("Welcome To S7Q C");
+client.channels.find('id', '472078877146218506').setName("Welcome To S7Q CLAN");
+  }, 3000);
+});
 
 
 client.on('ready', () => {
