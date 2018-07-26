@@ -339,9 +339,9 @@ client.on ("guildMemberAdd", member => {
 
 
   client.on('voiceStateUpdate', (codes, ReBeL) => {
-if(ReBeL.voiceChannelID !== "471346713848840225") return console.log("حمو");
+if(ReBeL.voiceChannelID !== "472082257952374786") return console.log("حمو");
 ReBeL.guild.createChannel(ReBeL.user.username , 'voice').then((rebeeel) =>{
-    rebeeel.setParent("471346818744320000");
+    rebeeel.setParent("472082107972190230");
 ReBeL.guild.members.get(ReBeL.id).setVoiceChannel(rebeeel.id).then((codess) =>{
   console.log("تــــــم .");
   let scan = setInterval(()=>{
@@ -369,7 +369,7 @@ client.channels.find('id', '472078877146218506').setName("Welcome To S");
 client.channels.find('id', '472078877146218506').setName("Welcome To S7");
 client.channels.find('id', '472078877146218506').setName("Welcome To S7Q");
 client.channels.find('id', '472078877146218506').setName("Welcome To S7Q C");
-client.channels.find('id', '472078877146218506').setName("Welcome To S7Q CLAN");
+client.channels.find('id', '472078877146218506').setName("Welcome To S7Q CLAN .");
   }, 3000);
 });
 
