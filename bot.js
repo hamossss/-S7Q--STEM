@@ -392,6 +392,1422 @@ client.channels.find('id', '472185044191019019').setName("Welcome To S7Q STORE .
   }, 3000);
 });
 
+
+
+client.on('message', message => {
+    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return
+	     if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '1')) return
+      message.guild.createRole({
+                  name: "1",
+                    color: "#cf1111",
+                    permissions: []
+     })
+	}
+});
+client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '2')) return		 
+      message.guild.createRole({
+                  name: "2",
+                    color: "#df5d11",
+                    permissions: []
+     })
+	}
+});
+client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '3')) return		 
+      message.guild.createRole({
+                  name: "3",
+                    color: "#dfab11",
+                    permissions: []
+     })
+	}
+});
+	client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '4')) return		 
+      message.guild.createRole({
+                  name: "4",
+                    color: "#dfde11",
+                    permissions: []
+     })
+	}});	
+	client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return     
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '5')) return		 
+      message.guild.createRole({
+                  name: "5",
+                    color: "#a8df11",
+                    permissions: []
+     })
+	}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return      
+		          if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '6')) return
+      message.guild.createRole({
+                  name: "6",
+                    color: "#64c40c",
+                    permissions: []
+     })
+	}});	
+	client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return     
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '7')) return		 
+      message.guild.createRole({
+                  name: "7",
+                    color: "#38c30c",
+                    permissions: []
+     })
+	}});	
+	client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '8')) return		 
+      message.guild.createRole({
+                  name: "8",
+                    color: "#0cc33f",
+                    permissions: []
+     })
+	}});	
+client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return      
+		          if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '9')) return
+      message.guild.createRole({
+                  name: "9",
+                    color: "#0cc36c",
+                    permissions: []
+     })
+}});	
+client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '10')) return		 
+      message.guild.createRole({
+                  name: "10",
+                    color: "#0cc394",
+                    permissions: []
+     })
+}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '11')) return		 
+      message.guild.createRole({
+                  name: "11",
+                    color: "#0cc3ad",
+                    permissions: []
+     })
+	}});	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '12')) return		 
+      message.guild.createRole({
+                  name: "12",
+                    color: "#0cb1c3",
+                    permissions: []
+     })
+}});	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return      
+		          if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '13')) return
+      message.guild.createRole({
+                  name: "13",
+                    color: "#0c9ec3",
+                    permissions: []
+     })
+}});
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return      
+		          if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '14')) return
+      message.guild.createRole({
+                  name: "14",
+                    color: "#0c8ac3",
+                    permissions: []
+     })
+}});
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+		          if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '15')) return
+      message.guild.createRole({
+                  name: "15",
+                    color: "#0c6cc3",
+                    permissions: []
+     })
+	}});
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '16')) return		 
+      message.guild.createRole({
+                  name: "16",
+                    color: "#0c49c3",
+                    permissions: []
+     })
+}});
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '17')) return		 
+      message.guild.createRole({
+                  name: "17",
+                    color: "#0c2bc3",
+                    permissions: []
+     })
+}});
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '18')) return		 
+      message.guild.createRole({
+                  name: "18",
+                    color: "#150cc3",
+                    permissions: []
+     })
+}});
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return 
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '19')) return		 
+      message.guild.createRole({
+                  name: "19",
+                    color: "#880cc3",
+                    permissions: []
+     })
+	}});	
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return      
+		          if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '20')) return
+      message.guild.createRole({
+                  name: "20",
+                    color: "#b50cc3",
+                    permissions: []
+     })
+	}});	
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '21')) return		 
+      message.guild.createRole({
+                  name: "21",
+                    color: "#c30cb8",
+                    permissions: []
+     })
+	}});	
+
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '22')) return		 
+      message.guild.createRole({
+                  name: "22",
+                    color: "#c30c90",
+                    permissions: []
+     })
+}});
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '23')) return		 
+      message.guild.createRole({
+                  name: "23",
+                    color: "#c30c63",
+                    permissions: []
+     })
+	}});	
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '24')) return		 
+      message.guild.createRole({
+                  name: "24",
+                    color: "#c30c4a",
+                    permissions: []
+     })
+	}});	
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '25')) return		 
+      message.guild.createRole({
+                  name: "25",
+                    color: "#c30c31",
+                    permissions: []
+     })
+	}});	
+
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return 
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '26')) return		 
+      message.guild.createRole({
+                  name: "26",
+                    color: "#ff0000",
+                    permissions: []
+     })
+	}});
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '27')) return		 
+      message.guild.createRole({
+                  name: "27",
+                    color: "#ff4200",
+                    permissions: []
+     })
+	}});	
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '28')) return		 
+      message.guild.createRole({
+                  name: "28",
+                    color: "#ff6c00",
+                    permissions: []
+     })
+		}});	
+	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return     
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '29')) return		 
+      message.guild.createRole({
+                  name: "29",
+                    color: "#ff8f00",
+                    permissions: []
+     })
+}});	
+	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return    
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '30')) return		 
+      message.guild.createRole({
+                  name: "30",
+                    color: "#ffd400",
+                    permissions: []
+     })
+}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '31')) return		 
+      message.guild.createRole({
+                  name: "31",
+                    color: "#e4ff00",
+                    permissions: []
+     })
+	}});	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return    
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '32')) return		 
+      message.guild.createRole({
+                  name: "32",
+                    color: "#adff00",
+                    permissions: []
+     })
+}});	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '33')) return		 
+      message.guild.createRole({
+                  name: "33",
+                    color: "#60ff00",
+                    permissions: []
+     })
+}});	
+	
+client.on('message', message => {
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '34')) return		 
+      message.guild.createRole({
+                  name: "34",
+                    color: "#14ff00",
+                    permissions: []
+     })
+}});	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return      
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '35')) return		 
+      message.guild.createRole({
+                  name: "35",
+                    color: "#00ff40",
+                    permissions: []
+     })
+}});	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '36')) return		 
+      message.guild.createRole({
+                  name: "36",
+                    color: "#00ff8c",
+                    permissions: []
+     })
+}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return
+		          if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '37')) return
+      message.guild.createRole({
+                  name: "37",
+                    color: "#00ffc4",
+                    permissions: []
+     })
+	}});	
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '38')) return		 
+      message.guild.createRole({
+                  name: "38",
+                    color: "#00e7ff",
+                    permissions: []
+     })
+}});	
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return 
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '39')) return		 
+      message.guild.createRole({
+                  name: "39",
+                    color: "#009aff",
+                    permissions: []
+     })
+}});	
+	
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '40')) return		 
+      message.guild.createRole({
+                  name: "40",
+                    color: "#0055ff",
+                    permissions: []
+     })
+}});	
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return     
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '41')) return		 
+      message.guild.createRole({
+                  name: "41",
+                    color: "#0001ff",
+                    permissions: []
+     })
+}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return    
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '42')) return		 
+      message.guild.createRole({
+                  name: "42",
+                    color: "#6700ff",
+                    permissions: []
+     })
+	}});	
+client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '43')) return		 
+      message.guild.createRole({
+                  name: "43",
+                    color: "#ad00ff",
+                    permissions: []
+     })
+	}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '44')) return		 
+      message.guild.createRole({
+                  name: "44",
+                    color: "#dd00ff",
+                    permissions: []
+     })
+	}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '45')) return		 
+      message.guild.createRole({
+                  name: "45",
+                    color: "#ff00fe",
+                    permissions: []
+     })
+	}});	
+client.on('message', message => {
+	
+	   if(message.content === prefix + 'c-colors') {
+         if(!message.member.hasPermission('MANAGE_ROLES')) return   
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '46')) return		 
+      message.guild.createRole({
+                  name: "46",
+                    color: "#ff00cd",
+                    permissions: []
+     })
+}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '47')) return		 
+      message.guild.createRole({
+                  name: "47",
+                    color: "#ff0096",
+                    permissions: []
+     })
+	}});	
+client.on('message', message => {
+	
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return 
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '48')) return		 
+      message.guild.createRole({
+                  name: "48",
+                    color: "#ff0057",
+                    permissions: []
+     })
+}});	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return 
+         if(message.guild.roles.find('name', '49')) return		 
+      message.guild.createRole({
+                  name: "49",
+                    color: "#ff002d",
+                    permissions: []
+     })
+	}});	
+	
+	client.on('message', message => {
+
+	    if(message.content === prefix + 'c-colors') {
+                         if(!message.channel.guild) return   
+         if(!message.member.hasPermission('MANAGE_ROLES')) return  message.channel.send(`**:x: | ${message.author.username}  You Must Have The \`MANAGE_ROLES\` permission to create colors roles !**`)
+         if(!message.guild.member(client.user).hasPermission('MANAGE_ROLES'))return message.channel.send(`**:x: | ${message.author.username}  I require the \`MANAGE_ROLES\` permission to create colors roles !**`)
+         if(message.guild.roles.find('name', '50')) return  message.channel.send('**لا يمكن انشاء رتب الالوان مرتين | Colors roles can not be created twice **');		 
+      message.guild.createRole({
+                  name: "50",
+                    color: "#050505",
+                    permissions: []
+     })
+		
+				
+	           message.channel.sendMessage({embed: new Discord.RichEmbed()
+     .setColor('GREEN')
+	 .setAuthor(`${message.author.username}'`, message.author.avatarURL).setDescription('``I Creating Colors Just Wait | جاري العمل على الالوان``')
+	 });
+				
+	
+	}});
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return  message.channel.send('**You Dont Have** `MANAGE_ROLES` **premission**').then(msg => msg.delete(6000))
+		let role = message.guild.roles.find('name', '1');
+		let rank = message.guild.roles.find('name', '1');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return 
+		let role = message.guild.roles.find('name', '2');
+		let rank = message.guild.roles.find('name', '2');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '3');
+		let rank = message.guild.roles.find('name', '3');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '4');
+		let rank = message.guild.roles.find('name', '4');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '5');
+		let rank = message.guild.roles.find('name', '5');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '6');
+		let rank = message.guild.roles.find('name', '6');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '7');
+		let rank = message.guild.roles.find('name', '7');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '8');
+		let rank = message.guild.roles.find('name', '8');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '9');
+		let rank = message.guild.roles.find('name', '9');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '10');
+		let rank = message.guild.roles.find('name', '10');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '11');
+		let rank = message.guild.roles.find('name', '11');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '12');
+		let rank = message.guild.roles.find('name', '12');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '13');
+		let rank = message.guild.roles.find('name', '13');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '14');
+		let rank = message.guild.roles.find('name', '14');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '15');
+		let rank = message.guild.roles.find('name', '15');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '16');
+		let rank = message.guild.roles.find('name', '16');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '17');
+		let rank = message.guild.roles.find('name', '17');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '18');
+		let rank = message.guild.roles.find('name', '18');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '19');
+		let rank = message.guild.roles.find('name', '19');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '20');
+		let rank = message.guild.roles.find('name', '20');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '21');
+		let rank = message.guild.roles.find('name', '21');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '22');
+		let rank = message.guild.roles.find('name', '22');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '23');
+		let rank = message.guild.roles.find('name', '23');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '24');
+		let rank = message.guild.roles.find('name', '24');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '25');
+		let rank = message.guild.roles.find('name', '25');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '26');
+		let rank = message.guild.roles.find('name', '26');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '27');
+		let rank = message.guild.roles.find('name', '27');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '28');
+		let rank = message.guild.roles.find('name', '28');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '29');
+		let rank = message.guild.roles.find('name', '29');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '30');
+		let rank = message.guild.roles.find('name', '30');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '31');
+		let rank = message.guild.roles.find('name', '31');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '32');
+		let rank = message.guild.roles.find('name', '32');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '33');
+		let rank = message.guild.roles.find('name', '33');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '34');
+		let rank = message.guild.roles.find('name', '34');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '35');
+		let rank = message.guild.roles.find('name', '35');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '36');
+		let rank = message.guild.roles.find('name', '36');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '37');
+		let rank = message.guild.roles.find('name', '37');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '38');
+		let rank = message.guild.roles.find('name', '38');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '39');
+		let rank = message.guild.roles.find('name', '39');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '40');
+		let rank = message.guild.roles.find('name', '40');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '41');
+		let rank = message.guild.roles.find('name', '41');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '42');
+		let rank = message.guild.roles.find('name', '42');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '43');
+		let rank = message.guild.roles.find('name', '43');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '44');
+		let rank = message.guild.roles.find('name', '44');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '45');
+		let rank = message.guild.roles.find('name', '45');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '46');
+		let rank = message.guild.roles.find('name', '46');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '47');
+		let rank = message.guild.roles.find('name', '47');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '48');
+		let rank = message.guild.roles.find('name', '48');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '49');
+		let rank = message.guild.roles.find('name', '49');
+    if (!rank) return  
+		role.delete()
+		}
+	
+	});
+
+	client.on('message',message => {
+		
+			let args = message.content.split(' ').slice(1);
+	if (message.content.startsWith(prefix +"d-colors")) {
+	if(!message.channel.guild) return
+		if(!message.member.hasPermission('MANAGE_ROLES')) return
+		let role = message.guild.roles.find('name', '50');
+		let rank = message.guild.roles.find('name', '50');
+    if (!rank) return  message.channel.send('**I did not find colors roles | لم اجد رتب الالوان**');
+		role.delete()
+		
+			message.channel.sendMessage({embed: new Discord.RichEmbed()
+          .setColor('RED').setAuthor(`${message.author.username}'`, message.author.avatarURL).setDescription('``I Deleting Colors Just Wait | جـاري حدف رتـب الالـوان``')});
+	}
+	});
+   client.on('message',message => {
+  if (message.content === prefix +'colors') {
+      if (!message.channel.guild) return;
+      if(!message.guild.member(client.user).hasPermission('ATTACH_FILES'))return message.reply("**I Don't Have Permission 'ATTACH_FILES' ليس لدي صلاحية")
+    message.channel.sendFile('./colors1.png');
+  }
+	
+});
+
+
+
+client.on('message', message => {
+          let args = message.content.split(' ').slice(1);
+   if(message.content.split(' ')[0] == '*color'){
+           const embedd = new Discord.RichEmbed()
+     .setFooter('Requested by '+message.author.username, message.author.avatarURL)
+   .setDescription(`**There's No Color With This Number ** :x: `)
+   .setColor(`ff0000`)
+
+    if(!isNaN(args) && args.length > 0)
+    
+
+if    (!(message.guild.roles.find("name",`${args}`))) return  message.channel.sendEmbed(embedd);
+
+
+       var a = message.guild.roles.find("name",`${args}`)
+                if(!a)return;
+const embed = new Discord.RichEmbed()
+                    
+     .setFooter('Requested by '+message.author.username, message.author.avatarURL)
+   .setDescription(`**Color Changed To Successfully** :white_check_mark: `)
+ 
+   .setColor(`${a.hexColor}`)
+  message.channel.sendEmbed(embed);
+          if (!args)return;
+setInterval(function(){})
+                  let count = 0;
+                  let ecount = 0;
+        for(let x = 1; x < 201; x++){
+           
+            message.member.removeRole(message.guild.roles.find("name",`${x}`))
+          
+            }
+                message.member.addRole(message.guild.roles.find("name",`${args}`));
+        
+            
+    }
+});
+
+
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
