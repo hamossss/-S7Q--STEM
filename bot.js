@@ -299,7 +299,7 @@ guild.channels.find('id', '471742581244428288').setName(" ➥ S7Q  Online ["+reb
 client.on('message', Codes => {
   
   if(Codes.content === "!صوت") {
-      Codes.channel.send("➥ S7Q  Online ["+rebel+"]");
+      Codes.channel.send("➥ S7Q Voice Online ["+rebel+"]");
 }
 });
 
