@@ -375,15 +375,21 @@ client.channels.find('id', '472078877146218506').setName("Welcome To S7Q CLAN ."
 
 client.on("ready", async  => {
 setInterval(function(){
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏");
+client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
+client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
+client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
+client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
 client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
 client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦ");
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦ");
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦ");
+client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
+client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
+client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
+client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
+client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
+client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
+client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
   }, 3000);
 });
-
 
 	
 
