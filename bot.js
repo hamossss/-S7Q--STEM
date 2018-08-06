@@ -279,7 +279,7 @@ if(!check.voiceChannelID){
   rebel++;
 }
 }
-guild.channels.find('id', '471742581244428288').setName(" . "+rebel+" عدد الاعضاء في الرومات");
+guild.channels.find('id', '471742581244428288').setName("➥ S7Q  Online ["+rebel+"]");
   client.setInterval(() =>{
     let d = Date.now()
   }, 5000);
@@ -290,16 +290,16 @@ let newUserChannel = newMember.voiceChannel
 let oldUserChannel = oldMember.voiceChannel
  if(oldUserChannel === undefined && newUserChannel !== undefined) {
    rebel++;
-guild.channels.find('id', '471742581244428288').setName(" . "+rebel+" عدد الاعضاء في الرومات");
+guild.channels.find('id', '471742581244428288').setName(" ➥ S7Q  Online ["+rebel+"]");
 } else if(newUserChannel === undefined){
   rebel--;
-guild.channels.find('id', '471742581244428288').setName(" . "+rebel+" عدد الاعضاء في الرومات");
+guild.channels.find('id', '471742581244428288').setName(" ➥ S7Q  Online ["+rebel+"]");
 }
 });
 client.on('message', Codes => {
   
   if(Codes.content === "!صوت") {
-      Codes.channel.send("  . "+rebel+" عدد الاعضاء في الرومات");
+      Codes.channel.send("➥ S7Q  Online ["+rebel+"]");
 }
 });
 
