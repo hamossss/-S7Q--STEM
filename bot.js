@@ -279,7 +279,7 @@ if(!check.voiceChannelID){
   rebel++;
 }
 }
-guild.channels.find('id', '471742581244428288').setName("➥ S7Q  Online ["+rebel+"]");
+guild.channels.find('id', '471742581244428288').setName("➥ S7Q Voice Online ["+rebel+"]");
   client.setInterval(() =>{
     let d = Date.now()
   }, 5000);
@@ -290,10 +290,10 @@ let newUserChannel = newMember.voiceChannel
 let oldUserChannel = oldMember.voiceChannel
  if(oldUserChannel === undefined && newUserChannel !== undefined) {
    rebel++;
-guild.channels.find('id', '471742581244428288').setName(" ➥ S7Q  Online ["+rebel+"]");
+guild.channels.find('id', '471742581244428288').setName("➥ S7Q Voice Online ["+rebel+"]");
 } else if(newUserChannel === undefined){
   rebel--;
-guild.channels.find('id', '471742581244428288').setName(" ➥ S7Q  Online ["+rebel+"]");
+guild.channels.find('id', '471742581244428288').setName("➥ S7Q Voice Online ["+rebel+"]");
 }
 });
 client.on('message', Codes => {
