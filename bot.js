@@ -27,45 +27,6 @@ client.on("message", message => {
 });
 
 
-client.on('message', function(msg) {
-         var prefix = "!"
-    if(msg.content.startsWith (prefix  + 'server')) {
-      let embed = new Discord.RichEmbed()
-      .setColor('RANDOM')
-      .setThumbnail(msg.guild.iconURL)
-      .setTitle(`Showing Details Of  **${msg.guild.name}*`)
-      .addField(':globe_with_meridians:** نوع السيرفر**',`[** __${msg.guild.region}__ **]`,true)
-      .addField(':medal:** __الرتب__**',`[** __${msg.guild.roles.size}__ **]`,true)
-      .addField(':red_circle:**__ عدد الاعضاء__**',`[** __${msg.guild.memberCount}__ **]`,true)
-      .addField(':large_blue_circle:**__ عدد الاعضاء الاونلاين__**',`[** __${msg.guild.members.filter(m=>m.presence.status == 'online').size}__ **]`,true)
-      .addField(':pencil:**__ الرومات الكتابية__**',`[** __${msg.guild.channels.filter(m => m.type === 'text').size}__** ]`,true)
-      .addField(':microphone:**__ رومات الصوت__**',`[** __${msg.guild.channels.filter(m => m.type === 'voice').size}__ **]`,true)
-      .addField(':crown:**__ الأونـر__**',`**${msg.guild.owner}**`,true)
-      .addField(':id:**__ ايدي السيرفر__**',`**${msg.guild.id}**`,true)
-      .addField(':date:**__ تم عمل السيرفر في__**',msg.guild.createdAt.toLocaleString())
-      msg.channel.send({embed:embed});
-    }
-  });
-
-client.on("message", msg => {
-           var prefix = "!";
-  if(msg.content.startsWith (prefix + "id")) {
-    if(!msg.channel.guild) return msg.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
-      const embed = new Discord.RichEmbed();
-  embed.addField(":cloud_tornado:  الاسم", `**[ ${msg.author.username}#${msg.author.discriminator} ]**`, true)
-          .addField(":id:  الايدي", `**[ ${msg.author.id} ]**`, true)
-          .setColor("RANDOM")
-          .setFooter(msg.author.username , msg.author.avatarURL)
-          .setThumbnail(`${msg.author.avatarURL}`)
-          .setTimestamp()
-          .setURL(`${msg.author.avatarURL}`)
-          .addField(':spy:  الحالة', `**[ ${msg.author.presence.status.toUpperCase()} ]**`, true)
-          .addField(':satellite_orbital:   يلعب', `**[ ${msg.author.presence.game === null ? "No Game" : msg.author.presence.game.name} ]**`, true)
-          .addField(':military_medal:  الرتب', `**[ ${msg.member.roles.filter(r => r.name).size} ]**`, true)
-          .addField(':robot:  هل هو بوت', `**[ ${msg.author.bot.toString().toUpperCase()} ]**`, true);
-      msg.channel.send({embed: embed})
-  }
-});
 
 client.on('message', eyad => {
   if (eyad.content.startsWith('!تكلم')) {
@@ -373,23 +334,7 @@ client.channels.find('id', '472078877146218506').setName("Welcome To S7Q CLAN ."
   }, 3000);
 });
 
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
-client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
-client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
-client.channels.find('id', '475924456129167361').setName("؏ٺــڃۚــمۘــ");
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
-client.channels.find('id', '475924456129167361').setName("ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ");
-client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
-client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
-client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
-client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
-client.channels.find('id', '475924456129167361').setName(" ٺــڃۚــمۘــ؏ ڪــﻼ̍ۙنۨ ڛۣــحۡــڦٺ");
-  }, 3000);
-});
+
 
 	
 client.on('message', message => {
