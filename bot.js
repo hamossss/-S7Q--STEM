@@ -442,7 +442,7 @@ client.on("message", message => {
             let user = message.mentions.users.first();
             let reason = args.slice(1).join(' ');
             let modlog = client.channels.find('name', 'warnings');
-            if (!reason) return message.reply('**تم عمل الانذار**');
+            if (!reason) return message.reply('**اكتب سبب الانذار**');
               if (message.mentions.users.size < 1) return message.reply('**يجب عليك منشن للعضو المراد الابلاغ عليه**').catch(console.error);
        
         if (!modlog) return message.reply('**لا يوجد روم بأسم report**');
