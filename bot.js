@@ -438,19 +438,19 @@ client.on('message', message =>{
 
 client.on("message", message => {
         let args = message.content.split(" ").slice(1);
-      if (message.content.startsWith(prefix + 'report')) {
+      if (message.content.startsWith(prefix + 'انذار')) {
             let user = message.mentions.users.first();
             let reason = args.slice(1).join(' ');
-            let modlog = client.channels.find('name', 'report');
-            if (!reason) return message.reply('**ضع سبباً مقنعاً**');
+            let modlog = client.channels.find('name', 'warnings');
+            if (!reason) return message.reply('**تم عمل الانذار**');
               if (message.mentions.users.size < 1) return message.reply('**يجب عليك منشن للعضو المراد الابلاغ عليه**').catch(console.error);
        
         if (!modlog) return message.reply('**لا يوجد روم بأسم report**');
         const embed = new Discord.RichEmbed()
           .setColor(0x00AE86)
           .setTimestamp()
-          .addField('نوع الرسالة:', 'Report')
-          .addField('المراد الابلاغ عليه:', `${user.username}#${user.discriminator} (${user.id}`)
+          .addField('نوع الرسالة:', 'انذار')
+          .addField('تم التبليغ علي:', `${user.username}#${user.discriminator} (${user.id}`)
           .addField('صاحب الابلاغ:', `${message.author.username}#${message.author.discriminator}`)
           .addField('السبب', reason);
           message.delete()
