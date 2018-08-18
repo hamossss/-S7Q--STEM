@@ -299,41 +299,6 @@ client.on ("guildMemberAdd", member => {
 });
 
 
-  client.on('voiceStateUpdate', (codes, ReBeL) => {
-if(ReBeL.voiceChannelID !== "472082257952374786") return console.log("حمو");
-ReBeL.guild.createChannel(ReBeL.user.username , 'voice').then((rebeeel) =>{
-    rebeeel.setParent("471357078439591956");
-ReBeL.guild.members.get(ReBeL.id).setVoiceChannel(rebeeel.id).then((codess) =>{
-  console.log("تــــــم .");
-  let scan = setInterval(()=>{
-if(!ReBeL.voiceChannel) {
-  rebeeel.delete();
-}
-  }, 1700);
-});
-});
-});
-  
-
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '480378169875234839').setName("W");
-client.channels.find('id', '480378169875234839').setName("We");
-client.channels.find('id', '480378169875234839').setName("Wel");
-client.channels.find('id', '480378169875234839').setName("Welc");
-client.channels.find('id', '480378169875234839').setName("Welco");
-client.channels.find('id', '480378169875234839').setName("Welcom");
-client.channels.find('id', '480378169875234839').setName("Welcome");
-client.channels.find('id', '480378169875234839').setName("Welcome T");
-client.channels.find('id', '480378169875234839').setName("Welcome To");
-client.channels.find('id', '480378169875234839').setName("Welcome To S");
-client.channels.find('id', '480378169875234839').setName("Welcome To S7");
-client.channels.find('id', '480378169875234839').setName("Welcome To S7Q");
-client.channels.find('id', '480378169875234839').setName("Welcome To S7Q C");
-client.channels.find('id', '480378169875234839').setName("Welcome To S7Q CLAN");
-  }, 3000);
-});
-
 
 
 	
