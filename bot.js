@@ -317,20 +317,20 @@ if(!ReBeL.voiceChannel) {
 
 client.on("ready", async  => {
 setInterval(function(){
-client.channels.find('id', '472078877146218506').setName("W");
-client.channels.find('id', '472078877146218506').setName("We");
-client.channels.find('id', '472078877146218506').setName("Wel");
-client.channels.find('id', '472078877146218506').setName("Welc");
-client.channels.find('id', '472078877146218506').setName("Welco");
-client.channels.find('id', '472078877146218506').setName("Welcom");
-client.channels.find('id', '472078877146218506').setName("Welcome");
-client.channels.find('id', '472078877146218506').setName("Welcome T");
-client.channels.find('id', '472078877146218506').setName("Welcome To");
-client.channels.find('id', '472078877146218506').setName("Welcome To S");
-client.channels.find('id', '472078877146218506').setName("Welcome To S7");
-client.channels.find('id', '472078877146218506').setName("Welcome To S7Q");
-client.channels.find('id', '472078877146218506').setName("Welcome To S7Q C");
-client.channels.find('id', '472078877146218506').setName("Welcome To S7Q CLAN .");
+client.channels.find('id', '480378169875234839').setName("W");
+client.channels.find('id', '480378169875234839').setName("We");
+client.channels.find('id', '480378169875234839').setName("Wel");
+client.channels.find('id', '480378169875234839').setName("Welc");
+client.channels.find('id', '480378169875234839').setName("Welco");
+client.channels.find('id', '480378169875234839').setName("Welcom");
+client.channels.find('id', '480378169875234839').setName("Welcome");
+client.channels.find('id', '480378169875234839').setName("Welcome T");
+client.channels.find('id', '480378169875234839').setName("Welcome To");
+client.channels.find('id', '480378169875234839').setName("Welcome To S");
+client.channels.find('id', '480378169875234839').setName("Welcome To S7");
+client.channels.find('id', '480378169875234839').setName("Welcome To S7Q");
+client.channels.find('id', '480378169875234839').setName("Welcome To S7Q C");
+client.channels.find('id', '480378169875234839').setName("Welcome To S7Q CLAN");
   }, 3000);
 });
 
@@ -436,58 +436,9 @@ client.on('message', message =>{
     };
 });
 
-client.on("message", message => {
-        let args = message.content.split(" ").slice(1);
-      if (message.content.startsWith(prefix + 'انذار')) {
-            let user = message.mentions.users.first();
-            let reason = args.slice(1).join(' ');
-            let modlog = client.channels.find('name', 'warnings');
-            if (!reason) return message.reply('**اكتب سبب الانذار**');
-              if (message.mentions.users.size < 1) return message.reply('**يجب عليك منشن للعضو المراد الابلاغ عليه**').catch(console.error);
-       
-        if (!modlog) return message.reply('**لا يوجد روم بأسم report**');
-        const embed = new Discord.RichEmbed()
-          .setColor(0x00AE86)
-          .setTimestamp()
-          .addField('نوع الرسالة:', 'انذار')
-          .addField('تم التبليغ علي:', `${user.username}#${user.discriminator} (${user.id}`)
-          .addField('صاحب الابلاغ:', `${message.author.username}#${message.author.discriminator}`)
-          .addField('السبب', reason);
-          message.delete()
-          return client.channels.get(modlog.id).sendEmbed(embed).catch(console.error);
-          console.log('[report] Send By: ' + message.author.username)
-      }
-      });
 
-client.on('message', message => {
-if (message.content.startsWith('!inv')) {
-let oi = message.mentions.users.first() ? message.mentions.users.first().id : message.author.id ; 
-  let img = message.mentions.users.first() ? message.mentions.users.first().username : message.author.username;
-  let imagemm = message.mentions.users.first() ? message.mentions.users.first().avatarURL : message.author.avatarURL
-  message.guild.fetchInvites().then(invs => {
-    let member = client.guilds.get(message.guild.id).members.get(oi);
-    let personalInvites = invs.filter(i => i.inviter.id === oi);
-    let urll = invs.filter(i => i.inviter.id === oi);
-    let link = urll.reduce((p , v) => v.url +` , Total de membros recrutados no convite: ${v.uses}.\n`+ p, `\nServidor: ${message.guild.name} \n `);
-    let inviteCount = personalInvites.reduce((p, v) => v.uses + p, 0);
-   let exec = personalInvites.reduce((p, v) => v.inviter);
- let possibleInvites = [['Total de membros recrutados:']];
-possibleInvites.push([inviteCount, exec]);
-        let user = message.mentions.users.first() || message.author;
-        let mem = message.guild.member(user);
-        let millisJoined = new Date().getTime() - mem.joinedAt.getTime();
-        let daysJoined = millisJoined / 1000 / 60 / 60 / 24;
-const alpha = new Discord.RichEmbed()
-.setAuthor(img)
-.addField('🏆 Invite Infos',  `\n\n► لقد قمت بدعوة ما مجموعه \`\`${Number(inviteCount)}\`\` عضو.\n\n► لقد انضممت لسرفر مند\`${daysJoined.toFixed(0)}\`يوم .\n\n► لقد انضممت بهذه الدعوة\`${exec}\``,true)
-.setThumbnail(imagemm)
-.setColor(0x4959e9);
-message.channel.send(alpha);
 
-});
 
-};
-  });
 
 client.on('ready', () => {
    console.log(`----------------`);
